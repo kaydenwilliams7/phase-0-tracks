@@ -9,4 +9,7 @@
 }
 .small{
 	font-size: .8em;
+} 
+#hover:hover {
+	color: blue;
 }
