@@ -13,3 +13,8 @@
 #hover:hover {
 	color: blue;
 }
+
+/* Our selector with select the second li of every ul */
+ul li:nth-child(2) {
+	color: red;
+}
