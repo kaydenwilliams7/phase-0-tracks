@@ -1,0 +1,22 @@
+.Octopus-Outfit {
+	position: relative;
+	margin: 50%;
+}
+#body {
+	position: absolute;
+	top: 0px;
+	left: 15px;
+	
+}
+#glasses {
+	position: absolute;
+	top: 159px;
+	left: 59px;
+	z-index: 1;
+}
+#body {
+	position: absolute;
+	top: 60px;
+	left: 15px;
+	z-index: -1;
+}
