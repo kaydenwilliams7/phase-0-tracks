@@ -1,0 +1,40 @@
+section {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.column-1 {
+  background-color: blue;
+  font-family: Helvetica;
+  border: solid 2px orange;
+}
+
+a {
+  color: red; 
+}
+
+.column-2 {
+  background-color:red;
+  font-family: sans-serif;
+  border: solid 2px purple;
+  
+}
+
+header {
+  background-color: orange;
+  text-align: center;
+  border-radius: 10px;
+}
+
+footer {
+  background: yellow;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  
+}
+
