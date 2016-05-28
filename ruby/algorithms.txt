@@ -1,0 +1,39 @@
+CharSet:
+up_call_arrow = call elevator to go up
+down_call_arrow = call elevator to go down
+G_button = Ground Floor
+1_button = First Floor
+2_button = Second Floor
+3_button = Third Floor
+-Aproach elevator doors and press call button
+	-If you desire to go up:
+		-Press the up call button
+	-If you desire to go down:
+		-press the down call button
+-Until elevator doors open wait by doors
+-When elvator doors open, enter 
+-Select Desired Floor Button:
+	-If desired floor is Ground:
+		-Push G
+	-If desired floor is First Floor:
+		-Push 1
+	-If desired floor is Second Floor:
+		-Push 2
+	-If desired floor is Third Floor:
+		-Push 3
+-After reaching desired floor:
+	-Exit Elevator.
+
+
+Algorithm For Watering HouseHold Plants:
+-Find watering can
+-Fill watering can until full
+-Until each household plant is checked:
+	-check if plant needs water
+	-If yes:
+		-Water plant
+	-Else if:
+		-Skip watering plant
+	-If watering can is empty && unwatered plants is greater than or equal to 1
+		-Refil watering can and continue watering
+-When unwatered plants equals 0 empty and store watering can 
