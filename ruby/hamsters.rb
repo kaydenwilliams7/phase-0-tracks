@@ -14,7 +14,12 @@ puts "Is it a good candidate for adoption?"
 		good_candidate = false
 	end
 	
-
 puts "How old is the hamster?"
-	estimated_age = gets.chomp.to_i
+	  estimated_age = gets.chomp.to_i
+
+puts "The hamsters name is #{name}"
+puts "The hamsters noise level is #{volume_level}"
+puts "The hamsters fur color is #{fur_color}"
+puts "Is the hamster a good candidate #{good_candidate}"
+puts "How old is the hamster? #{estimated_age}"
 
