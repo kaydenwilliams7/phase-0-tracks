@@ -1,3 +1,13 @@
+#Algorithm for encrypt method
+#- Charset = individual letters are equal to each other.
+#- Set a method that checks the index of the letter and moves it one forward in the alphabet.
+#	- if char = space, keep space.
+
+#Algorithm for decrypt method
+#- Charset = individual letters are equal to each other.
+#- Set a method that checks the index of the letter and moves it one backwards in the alphabet.
+		#- if char = space, keep space.
+
 def encrypt(str)
  i = 0
 
@@ -27,3 +37,23 @@ def decrypt(str)
 	end
 	return decrypted_str
 end
+
+def agent_interface
+	puts "Hello agent! Would you like to encrypt or decrypt a password?"
+	agent_answer = gets.chomp
+	if agent_answer == "encrypt"
+		puts "What would you like to encrypt?"
+		puts encrypt(gets.chomp)
+	elsif agent_answer == "decrypt"
+		puts "What would you like to decrypt?"
+		decrypt(gets.chomp)
+	else
+		puts "Invaild response"		
+	end
+	puts "Thank you for using this cipher!"
+end
+
+
+
+
+
