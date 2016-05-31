@@ -16,7 +16,11 @@ def vampire_dection()
 	if (stated_age == 2016 - stated_year_born) && (garlic_prefrences == "yes" || "yes")
 		puts "Probably not a vampire."
 	elsif (stated_age != 2016 - stated_year_born) && (garlic_prefrences == "no" || enrollment_prefrences == "no")
-			
+		puts "Probably a vampire."
+	elsif (stated_age != 2016 - stated_year_born && garlic_prefrences == "no") && (enrollment_prefrences == "no")
+		puts "Almost certainly a vampire."
+	else
+		puts "Results inconclusive."
 	end 
 end
 
