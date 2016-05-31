@@ -14,9 +14,20 @@ def vampire_detection()
 		garlic_prefrences = gets.chomp.downcase 
 		puts "Would you like to enroll in the company’s health insurance?"
 		enrollment_prefrences = gets.chomp.downcase
+
+		puts "List any allergies one at a time. Type 'done' when finished."
+		vampire_allergies = ""
+		until (gets.chomp == "done" || "sunshine")
+			puts "List any allergies one at a time. Type 'done' when finished."
+			if gets.chomp == "sunshine"
+			   vampire_allergies += "sunshine"
+			end 
+		end
 		
 		if name == ("Drake Cula" || "Tu Fang")
-			puts "Definitely a vampire"	
+			puts "Definitely a vampire"
+		elsif (vampire_allergies == "sunshine") 
+			puts "Probably a vampire."
 		elsif (stated_age == 2016 - stated_year_born) && (garlic_prefrences == "yes" || enrollment_prefrences == "yes")
 			puts "Probably not a vampire."
 		elsif (stated_age != 2016 - stated_year_born && garlic_prefrences == "no") && (enrollment_prefrences == "no")
