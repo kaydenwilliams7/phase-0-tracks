@@ -2,7 +2,7 @@ def vampire_detection()
 	puts "How many users will be processed?"
 	
 	users = gets.chomp.to_i
-	until (users == 0)
+	until (users <= 0)
 		
 		puts "What is your name?"
 		name = gets.chomp
