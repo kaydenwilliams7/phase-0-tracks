@@ -28,7 +28,7 @@ def decrypt(str)
 	i = 0
 	while i < str.length
 		cipher = "abcdefghijklmnopqrstuvwxyz" 
-		#line 22 tells me where on the cipher the letter at index i of my str is and holds it in the varible place_on_cipher
+		#next line tells me where on the cipher the letter at index i of my str is and holds it in the varible place_on_cipher
 		place_on_cipher = cipher.index(str[i])
 		#decoded_letter represents the str letter decoded because the decrypted version of the str is always i - 1 on the cipher 
 		decoded_letter = cipher[place_on_cipher - 1]
