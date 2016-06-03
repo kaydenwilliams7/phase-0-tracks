@@ -1,3 +1,9 @@
+def build_array(vaule1, vaule2, vaule3)
+	arrary = []
+	return array << vaule1 << vaule2 << vaule3 
+end
+
+
 new_array = []
 p new_array
 
@@ -20,3 +26,5 @@ second_array = ["Anne Carson", "Walt Whitman", "Shakespeare"]
 final_array = new_array << second_array
 
 p final_array
+
+build_array(1,2,3)
