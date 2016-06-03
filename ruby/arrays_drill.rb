@@ -1,8 +1,11 @@
-def build_array(vaule1, vaule2, vaule3)
+def build_array(value1, value2, value3)
 	arrary = []
-	return array << vaule1 << vaule2 << vaule3 
+	return array << value1 << value2 << value3 
 end
 
+def add_2_array(array, value)
+	return array << value	
+end
 
 new_array = []
 p new_array
@@ -28,3 +31,5 @@ final_array = new_array << second_array
 p final_array
 
 build_array(1,2,3)
+p add_2_array(["a", "b", "c", 1, 2], 3)
+p add_2_array(["a"], 4)
