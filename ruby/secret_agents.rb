@@ -46,7 +46,7 @@ def agent_interface
 		puts encrypt(gets.chomp)
 	elsif agent_answer == "decrypt"
 		puts "What would you like to decrypt?"
-		decrypt(gets.chomp)
+		puts decrypt(gets.chomp)
 	else
 		puts "Invaild response"		
 	end
