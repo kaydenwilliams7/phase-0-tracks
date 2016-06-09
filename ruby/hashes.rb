@@ -8,5 +8,7 @@ Pseudocode:
 	-Decor theme
 	-Favorite color
 	-Pets
-	-Allergies 
+	-Allergies
+-Create loop to ask each client for the various info
+-Thank the client for filling out the form.
 =end
