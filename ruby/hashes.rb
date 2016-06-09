@@ -54,7 +54,7 @@ def client_info_form
 	if gets.chomp == "no"
 		p applicant
 	
-	elsif "name" "household" 
+	elsif "name" 
 		puts "What would you like to change the name to?"
 		applicant[:name] = gets.chomp
 		p applicant
@@ -95,11 +95,6 @@ def client_info_form
 		p applicant
 		
 	end
-
-
-
-	
-
 end
 
 client_info_form
