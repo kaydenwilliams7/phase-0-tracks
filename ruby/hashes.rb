@@ -39,12 +39,70 @@ def client_info_form
 		applicant[:pets] = true
 	else
 		applicant[:pets] = false
-	end		
-	 
+	end	
+
+	puts "Do you have any allergies?"
+	if gets.chomp == "yes"
+		applicant[:allergies] = true
+	else
+		applicant[:allergies] = false
+	end	
+
+	p applicant	
+
+	puts "Do you need to change anything?"
+	if gets.chomp == "no"
+		p applicant
+	
+	elsif "name" "household" 
+		puts "What would you like to change the name to?"
+		applicant[:name] = gets.chomp
+		p applicant
+	
+	elsif "age"
+		puts "What would you like to change the age to?"
+		applicant[:age] = gets.chomp
+		p applicant
+	
+	elsif "address"
+		puts "What would you like to change the address to?"
+		applicant[:address] = gets.chomp
+		p applicant
+	
+	elsif "household_number"
+		puts "What large is you household?"
+		applicant[:household_number] = gets.chomp
+		p applicant
+	
+	elsif "decor_theme"
+		puts "What decor do you prefer?"
+		applicant[:decor_theme] = gets.chomp
+		p applicant
+		
+	elsif "favorite_color"
+		puts "What is your favorite color?"
+		applicant[:decor_theme] = gets.chomp
+		p applicant
+	
+	elsif "pets"
+		puts "Do you have pets?"
+		applicant[:pets] = gets.chomp
+		p applicant
+
+	elsif "allergies"
+		puts "Do you have allergies?"
+		applicant[:allergies] = gets.chomp
+		p applicant
+		
+	end
+
+
+
+	
 
 end
 
-
+client_info_form
 
 
 
