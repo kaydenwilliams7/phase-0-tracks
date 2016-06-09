@@ -81,7 +81,7 @@ def client_info_form
 		
 	elsif "favorite_color"
 		puts "What is your favorite color?"
-		applicant[:decor_theme] = gets.chomp
+		applicant[:favorite_color] = gets.chomp
 		p applicant
 	
 	elsif "pets"
