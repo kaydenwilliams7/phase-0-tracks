@@ -51,45 +51,46 @@ def client_info_form
 	p applicant	
 
 	puts "Do you need to change anything?"
-	if gets.chomp == "no"
+	user_answer = gets.chomp
+	if user_answer == "no"
 		p applicant
 	
-	elsif "name" 
+	elsif user_answer.to_sym == :name 
 		puts "What would you like to change the name to?"
 		applicant[:name] = gets.chomp
 		p applicant
 	
-	elsif "age"
+	elsif user_answer.to_sym == :age
 		puts "What would you like to change the age to?"
 		applicant[:age] = gets.chomp
 		p applicant
 	
-	elsif "address"
+	elsif user_answer.to_sym == :address
 		puts "What would you like to change the address to?"
 		applicant[:address] = gets.chomp
 		p applicant
 	
-	elsif "household_number"
+	elsif user_answer.to_sym == :household_number
 		puts "What large is you household?"
 		applicant[:household_number] = gets.chomp
 		p applicant
 	
-	elsif "decor_theme"
+	elsif user_answer.to_sym == :decor_theme
 		puts "What decor do you prefer?"
 		applicant[:decor_theme] = gets.chomp
 		p applicant
 		
-	elsif "favorite_color"
+	elsif user_answer.to_sym == :favorite_color
 		puts "What is your favorite color?"
 		applicant[:favorite_color] = gets.chomp
 		p applicant
 	
-	elsif "pets"
+	elsif user_answer.to_sym == :pets
 		puts "Do you have pets?"
 		applicant[:pets] = gets.chomp
 		p applicant
 
-	elsif "allergies"
+	elsif user_answer.to_sym == :allergies
 		puts "Do you have allergies?"
 		applicant[:allergies] = gets.chomp
 		p applicant
