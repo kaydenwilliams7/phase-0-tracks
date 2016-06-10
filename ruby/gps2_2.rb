@@ -27,9 +27,11 @@ steps:
 output:
 	-hash with the delete key-value pair gone.
 	-p udated grocery list using #print.
-	
+
 Method to update the quantity of an item
 input:
+	-key
+	-new value
 steps:
 output:
 
