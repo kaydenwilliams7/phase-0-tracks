@@ -33,13 +33,20 @@ input:
 	-key
 	-new value
 steps:
+	-first we need to find the key
+	-then change the value of the key to the new quantity
 output:
+	-Upadated hash with new quantity in item input.
 
 Method to print a list and make it look pretty
 input:
+	-Hash
 steps:
+	-Make sure list is readable
+	-list each item with quantity in the same line
+	-Make sure to add whitespace between each item key
 output:
-
+	-A prettyfied hash
 =end
 
 
