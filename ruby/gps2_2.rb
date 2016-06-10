@@ -85,8 +85,3 @@ remove_item(:lemonade)
 update_quantity(:ice_cream, 1)
 
 prettyfie_list($grocery_list)
-
-
-
-
-
