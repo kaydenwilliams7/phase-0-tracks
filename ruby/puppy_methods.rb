@@ -23,6 +23,12 @@ class Puppy
   	
   end
 
+  def play_dead(dog_name)
+  	puts "#{dog_name}, play dead!"
+
+  	puts "#{dog_name} dropped dead"
+  end
+
 end
 
 fido = Puppy.new
@@ -30,3 +36,4 @@ fido.fetch("Ball")
 fido.speak(10)
 fido.roll_over
 fido.dog_years(10)
+fido.play_dead("sparky")
