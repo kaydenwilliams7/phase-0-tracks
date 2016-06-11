@@ -17,9 +17,16 @@ class Puppy
   	
   end
 
+  def dog_years(integer)
+
+  	p integer * 7
+  	
+  end
+
 end
 
 fido = Puppy.new
 fido.fetch("Ball")
 fido.speak(10)
 fido.roll_over
+fido.dog_years(10)
