@@ -56,16 +56,18 @@ class Dog_trainers
 	end
 
 	def train_dog_to_sit(dog_name)
-
-		puts "Teach #{dog_name} how to sit."
-		puts "After many treats #{dog_name} now knows how to sit."
+		puts "\n"
+		p "Teach #{dog_name} how to sit."
+		
+		p "After many treats #{dog_name} now knows how to sit."
+		
 		
 	end
 
 	def clean_dog_cage(trainer_name)
-
-		puts "#{trainer_name} cleaned the dog cage!"
-		
+		puts "\n"
+		p "#{trainer_name} cleaned the dog cage!"
+		 
 	end
 
 end
@@ -75,6 +77,8 @@ trainers_array = []
 
  p trainers_array.length
 
+trainers_array.each {|instance| "instance" << Dog_trainers.new.train_dog_to_sit("Spot") + Dog_trainers.new.clean_dog_cage("Joe") }
 
+p trainers_array
 
 
