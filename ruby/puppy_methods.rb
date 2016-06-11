@@ -51,8 +51,8 @@ end
 class Dog_trainers
 
 	def initialize
-		puts "Initializing new puppy instance..."
-		puts "\n"
+		"Initializing new puppy instance..."
+		
 	end
 
 	def train_dog_to_sit(dog_name)
@@ -69,6 +69,12 @@ class Dog_trainers
 	end
 
 end
+
+trainers_array = []
+ 50.times {trainers_array << Dog_trainers.new}
+
+ p trainers_array.length
+
 
 
 
