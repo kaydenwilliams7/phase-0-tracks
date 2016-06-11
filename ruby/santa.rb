@@ -5,9 +5,15 @@ class Santa
 	end
 
 	def eat_milk_and_cookies(cookie)
-		"That was a good #{cookie}!"
+		puts "That was a good #{cookie}!"
 	end
 
 	def initialize
 		puts "Initializing Santa instance..."
 	end
+
+end
+
+saint_nick = Santa.new
+saint_nick.speak
+saint_nick.eat_milk_and_cookies('cookie')
