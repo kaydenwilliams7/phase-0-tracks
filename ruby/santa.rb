@@ -2,7 +2,7 @@ class Santa
 	
 	def speak
 		puts 'Ho, ho, ho! Haaaappy holidays!'
-			
+
 	end
 
 	def eat_milk_and_cookies(cookie)
@@ -33,3 +33,4 @@ end
 saint_nick = Santa.new
 saint_nick.speak
 saint_nick.eat_milk_and_cookies('cookie')
+
