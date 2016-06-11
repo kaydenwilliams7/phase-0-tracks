@@ -3,5 +3,8 @@ class TodoList
 		@array = array
 	end
 	
+	def get_items
+		@array
+	end
 	
 end
