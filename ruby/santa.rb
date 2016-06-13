@@ -1,4 +1,7 @@
 class Santa
+	attr_reader :ethnicity
+	attr_accessor :age, :gender
+
 	def initialize(gender, ethnicity)
 		
 		@gender = gender
@@ -27,18 +30,6 @@ class Santa
 
 	end
 
-	def age
-		@age
-	end
-
-	def gender
-		@gender
-	end
-
-	def gender=(new_gender)
-		@gender = new_gender
-	end
-
 	def celebrate_birthday
 		@age += 1
 	end
@@ -50,6 +41,24 @@ class Santa
 		@reindeer_ranking.push(reindeer_name)
 		p @reindeer_ranking
 	end
+
+# Getter methods:
+	# def age
+	# 	@age
+	# end
+
+	# def gender
+	# 	@gender
+	# end
+
+	# def ethnicity
+	# 	@ethnicity
+	# end
+
+# Setter methods:
+	# def gender=(new_gender)
+	# 	@gender = new_gender
+	# end
 
 end
 
@@ -72,7 +81,7 @@ saint_nick.get_mad_at("Vixen")
 p saint_nick.age
 p saint_nick.gender
 p saint_nick.gender = "non gender"
-
+p saint_nick.ethnicity
 # p santas
 
 
