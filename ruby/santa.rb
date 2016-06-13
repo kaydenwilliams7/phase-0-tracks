@@ -27,19 +27,28 @@ class Santa
 
 	end
 
-	# def age
-	# 	@age
-	# end
+	def age
+		@age
+	end
+
+	def gender
+		@gender
+	end
+
+	def gender=(new_gender)
+		@gender = new_gender
+	end
 
 	def celebrate_birthday
 		@age += 1
 	end
 
 	def get_mad_at(reindeer_name)
+		puts "Santa got mad at #{reindeer_name}! They know what they did!"
 		reindeer_index = @reindeer_ranking.index(reindeer_name)
 		@reindeer_ranking.delete_at(reindeer_index)
 		@reindeer_ranking.push(reindeer_name)
-		
+		p @reindeer_ranking
 	end
 
 end
@@ -58,7 +67,11 @@ santas << Santa.new("agender", "black")
 # santas << Santa.new("N/A", "N/A")
 
 p saint_nick.celebrate_birthday
- 
+
+saint_nick.get_mad_at("Vixen")
+p saint_nick.age
+p saint_nick.gender
+p saint_nick.gender = "non gender"
 
 # p santas
 
