@@ -7,12 +7,14 @@
 			4. Gender
 		-Create three methods:
 			1. Level up
-			2. Pokemon cry
-			3. Pokemon attack
-			4. Pokemon Evolve
+			2. Pokemon attack
+			3. Pokemon Evolve
 =end
 
 class Pokemon
+	attr_reader :name, :gender
+	attr_writer :type, :level
+
 	def initialize(type, name, gender, level)
 		@type = type
 		@name = name
@@ -27,9 +29,36 @@ class Pokemon
 
 	def level_up(level_gained)
 		@level += level_gained
+		puts "\n"
 		puts "#{@name} is now level #{@level}!"
 	end
 
+	def evolve(name) 
+		if name == "Pikachu"
+			puts "\n"
+			puts "#{name} evolved into Raichu!"
+		    @name = "Raichu"
+		
+		elsif name == "Bulbasaur"
+		    	puts "\n"
+		    	puts "#{name} evolved into Ivysaur!"
+		    	@name = "Ivysaur"
+		
+
+		elsif name == "Charmander"
+			puts "\n"
+			puts "#{name} evolved into Charmeleon!"
+			@name = "Charmeleon"
+
+		elsif name == "Squirtle"
+				puts "\n"
+				puts "#{name} evolved into Wartortle!"
+				@name = "Wartortle"
+		else
+			puts "\n"
+			puts "Invalid Pokemon. Please try again."
+		end
+	end
 
 
 end
@@ -37,7 +66,14 @@ end
 pikachu = Pokemon.new("electric", "Pikachu", "female", 5)
 bulbasaur = Pokemon.new("grass", "Bulbasaur", "male", 5)
 charmander = Pokemon.new("fire", "Charmander", "female", 5)
+squirtle = Pokemon.new("water", "Squirtle", "male", 5)
+
 charmander.level_up(1)
+charmander.evolve("Charmander")
+puts charmander.name
+
+squirtle.evolve("Squirtle")
+puts squirtle.name
 
 
 
