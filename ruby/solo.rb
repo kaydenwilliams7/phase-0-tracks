@@ -24,7 +24,6 @@ class Pokemon
 		puts "\n"
 		puts "Creating new pokemon..."
 		puts "#{name} is a #{gender} level #{level} #{type} type pokemon!" 
-
 	end
 
 	def level_up(level_gained)
@@ -44,7 +43,6 @@ class Pokemon
 		    	puts "#{name} evolved into Ivysaur!"
 		    	@name = "Ivysaur"
 		
-
 		elsif name == "Charmander"
 			puts "\n"
 			puts "#{name} evolved into Charmeleon!"
@@ -54,10 +52,16 @@ class Pokemon
 				puts "\n"
 				puts "#{name} evolved into Wartortle!"
 				@name = "Wartortle"
+		
 		else
 			puts "\n"
 			puts "Invalid Pokemon. Please try again."
 		end
+	end
+
+	def attack
+		puts "\n"
+		puts "#{@name} attacked the enemy Pokemon!"
 	end
 
 
@@ -74,6 +78,9 @@ puts charmander.name
 
 squirtle.evolve("Squirtle")
 puts squirtle.name
+
+
+puts bulbasaur.attack
 
 
 
