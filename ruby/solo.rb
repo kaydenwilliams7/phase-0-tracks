@@ -13,23 +13,31 @@
 =end
 
 class Pokemon
-	def initialize(type, level, name, gender)
+	def initialize(type, name, gender, level)
 		@type = type
-		@level = level
 		@name = name
 		@gender = gender
+		@level = level
+
 		puts "\n"
 		puts "Creating new pokemon..."
 		puts "#{name} is a #{gender} level #{level} #{type} type pokemon!" 
 
 	end
 
+	def level_up(level_gained)
+		@level += level_gained
+		puts "#{@name} is now level #{@level}!"
+	end
+
 
 
 end
 
-pikachu = Pokemon.new("electric", 5, "Pikachu", "female")
-bulbasaur = Pokemon.new("grass", 5, "Bulbasaur", "male")
+pikachu = Pokemon.new("electric", "Pikachu", "female", 5)
+bulbasaur = Pokemon.new("grass", "Bulbasaur", "male", 5)
+charmander = Pokemon.new("fire", "Charmander", "female", 5)
+charmander.level_up(1)
 
 
 
