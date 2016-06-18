@@ -7,6 +7,7 @@
 #
 #
 require_relative 'state_data'
+# Tells the compiler that it requires the data/code from state_data.rb to work.
 
 class VirusPredictor
 
