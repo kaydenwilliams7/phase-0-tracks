@@ -95,7 +95,7 @@ alaska.virus_effects
 
 def state_virus_breakout
 	STATE_DATA.each do |key, value|
-	instance = VirusPredictor.new(key, STATE_DATA[key][:population_density], STATE_DATA[key][:population])
+	instance = VirusPredictor.new(key, vaule[:population_density], value[:population])
 	instance.virus_effects
 	end
 
