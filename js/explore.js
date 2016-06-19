@@ -5,9 +5,12 @@ function reverseStr(str) {
   characters = str.split("")
   //characters will be an array
   reversedWord = ""
-  for (var i = 4; i >= 0; i--) {
+  for (var i = characters.length - 1; i >= 0; i--) {
     reversedWord += characters[i];
   }
   return reversedWord;
 }
-reverseStr("hello");
+console.log(reverseStr("hello"));
+storedReversedWord = reverseStr("hello");
+console.log(storedReversedWord);
+console.log(reverseStr('hello') == storedReversedWord);
