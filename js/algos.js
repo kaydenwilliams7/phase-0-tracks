@@ -19,7 +19,6 @@ function longestPharse(strArray) {
     if (currentStr.length < strArray[i].length) {
       currentStr = strArray[i];
     }
-
   }
   finalPharse = currentStr;
   return finalPharse;
