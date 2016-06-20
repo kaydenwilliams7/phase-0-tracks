@@ -57,3 +57,20 @@ function keyValueMatch(obj1, obj2) {
   return results;
 }
 console.log(keyValueMatch({name: "Steven", age: 54}, {name: "Tamir", age: 54}));
+
+function randomArrayGenerator(number) {
+  randomStrs = [];
+  str = ''
+  possibleChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
+  for(var i = 0; i < number; i++) {
+    str += possibleChars.charAt(Math.floor(Math.random() * possibleChars.length));
+
+    randomStrs.push(str);
+    str = ''
+    console.log(randomStrs);
+  }
+  return randomStrs;
+}
+
+randomArrayGenerator(10);
