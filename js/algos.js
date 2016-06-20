@@ -39,6 +39,21 @@ console.log(longestPharse(array));
    a match in the two objs and false if it does not.
 */
 
-function keyValueMatch(obj1, obj2) {
+//This solution assumes the key value pairs are in
+//the same place as they are in the other obj if there
+//is a match. It also assumes that both objects are the
+//same length.
 
+function keyValueMatch(obj1, obj2) {
+  keys1 = Object.keys(obj1);
+  keys2 = Object.keys(obj2);
+  for (var i = 0; i < keys1.length; i++) {
+    if (keys1[i] == keys2[i] && obj1[keys1[i]] == obj2[keys2[i]]) {
+      return true;
+    } else {
+      results = false;
+    }
+  }
+  return results;
 }
+console.log(keyValueMatch({name: "Steven", age: 54}, {name: "Tamir", age: 54}));
