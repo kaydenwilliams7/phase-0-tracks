@@ -74,4 +74,7 @@ function randomArrayGenerator(number) {
   return randomStrs;
 }
 
-randomArrayGenerator(10);
+// randomArrayGenerator(10);
+for(var i = 0; i <= 10; i++) {
+  console.log(longestPharse(randomArrayGenerator(4)));
+}
