@@ -62,14 +62,15 @@ function randomArrayGenerator(number) {
   randomStrs = [];
   str = ''
   possibleChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-
   for(var i = 0; i < number; i++) {
-    str += possibleChars.charAt(Math.floor(Math.random() * possibleChars.length));
-
+    letterCount = Math.floor(Math.random() * 10);
+    for(var j = -1; j < letterCount; j++) {
+      str += possibleChars.charAt(Math.floor(Math.random() * possibleChars.length));
+    }
     randomStrs.push(str);
     str = ''
-    console.log(randomStrs);
   }
+  console.log(randomStrs);
   return randomStrs;
 }
 
