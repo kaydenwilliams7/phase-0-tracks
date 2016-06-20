@@ -19,3 +19,12 @@ function createObject() {
 };
 
 console.log(createObject());
+
+function Car(make, model, year, isReliable) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  console.log("This car is a ", this);
+  this.horn = function() {console.log("BEEEEEEPPPPP!!!");};
+  console.log("New car complete!"); 
+}
