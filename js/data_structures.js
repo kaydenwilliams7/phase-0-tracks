@@ -18,4 +18,4 @@ function createObject() {
   return horseColors;
 };
 
-createObject()
+console.log(createObject());
