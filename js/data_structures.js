@@ -24,7 +24,17 @@ function Car(make, model, year, isReliable) {
   this.make = make;
   this.model = model;
   this.year = year;
+  this.isReliable = isReliable;
   console.log("This car is a ", this);
-  this.horn = function() {console.log("BEEEEEEPPPPP!!!");};
-  console.log("New car complete!"); 
+  this.horn = function() {return "BEEEEEEPPPPP!!!";};
+  this.carType = function() {
+    console.log('This car is a ' + this.year + ' ' + this.make + ' ' + this.model + '.');
+    console.log('It is ' + this.isReliable + ' that this car is reliable...');
+
+  };
 }
+
+var newCar = new Car("Nissan", "Altima", 2008, true);
+console.log(newCar);
+console.log(newCar.horn());
+newCar.carType();
