@@ -1,0 +1,55 @@
+INPUT:
+SELECT * FROM authors;
+
+OUTPUT:
+1|JK ROWLING
+2|Stephanie Meyers
+--------------------------------------------
+INPUT:
+UPDATE authors SET name="Stephenie Meyer" WHERE id=2;
+
+OUTPUT:
+no visible output
+
+---------------------------------------------
+INPUT:
+SELECT * FROM books, authors WHERE books.authors_id = authors.id;
+
+OUTPUT:
+1|Harry Potter and the Philosopher's Stone|1997-06-26|1|1|JK ROWLING
+2|Harry Potter and the Chamber of Secrets|1998-07-02|1|1|JK ROWLING
+3|Harry Potter and the Prisoner of Azkaban|1999-07-08|1|1|JK ROWLING
+4|Harry Potter and the Goblet of Fire|2000-07-08|1|1|JK ROWLING
+5|Twilight|2005-10-05|2|2|Stephenie Meyer
+6|New Moon|2006-09-06|2|2|Stephenie Meyer
+7|Eclipse|2007-08-07|2|2|Stephenie Meyer
+8|Breaking Dawn|2008-08-02|2|2|Stephenie Meyer
+
+---------------------------------------------
+INPUT:
+SELECT name FROM books, authors WHERE books.authors_id = authors.id;
+
+OUTPUT:
+JK ROWLING
+JK ROWLING
+JK ROWLING
+JK ROWLING
+Stephenie Meyer
+Stephenie Meyer
+Stephenie Meyer
+Stephenie Meyer
+
+---------------------------------------------
+INPUT:
+DELETE FROM books WHERE title= "New Moon";
+
+OUTPUT:
+No visible output!
+
+---------------------------------------------
+
+
+
+
+
+
