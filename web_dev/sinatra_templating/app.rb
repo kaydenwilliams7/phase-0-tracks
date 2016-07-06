@@ -24,7 +24,7 @@ post '/students' do
   redirect '/'
 end
 
-get '/sf_campus' do
+get '/sf/campus' do
 	erb :sf_campus
 	
 end
