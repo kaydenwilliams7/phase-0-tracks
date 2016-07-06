@@ -24,4 +24,15 @@ post '/students' do
   redirect '/'
 end
 
+get '/sf_campus' do
+	erb :sf_campus
+	
+end
+
+
 # add static resources
+
+
+
+
+
