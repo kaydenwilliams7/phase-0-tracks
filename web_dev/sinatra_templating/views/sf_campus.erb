@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Students At San Francisco Campus</title>
+</head>
+<body>
+<h1>San Francisco Campus</h1>
+<p>Click <a href="/new/campus">here</a> to add a new campus to DBC!</p>
+
+<ul>
+    <% @campus.each do |campus| %>
+      <li><%= campus['campus_name'] %> </li>
+    <% end %>
+  </ul>
+
+</body>
+</html>
