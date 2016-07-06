@@ -5,8 +5,13 @@
 </head>
 <body>
 <h1>San Francisco Campus</h1>
-<p>Hello!</p>
+<p>Click <a href="/new/campus">here</a> to add a new campus to DBC!</p>
 
+<ul>
+    <% @campus.each do |campus| %>
+      <li><%= campus['campus_name'] %> </li>
+    <% end %>
+  </ul>
 
 </body>
 </html>
